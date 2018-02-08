@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">OutdoorTool</string>
+    <string name="level_vertical">vertical</string>
+    <string name="level_horizontal">horizontal</string>
+    <string name="noise_level1">Quiet environment (000-045 db)</string>
+    <string name="noise_level2">Common indoor environment (045-060 db)</string>
+    <string name="noise_level3">Noisy workplace (060-080 db)</string>
+    <string name="noise_level4">Harmful noise (080-115 db)</string>
+    <string name="noise_level5">Extremely harmful noise (115-150 db)</string>
+</resources>
