@@ -30,8 +30,8 @@
         android:text="噪音测试" />
 
     <Button
-        android:id="@+id/magnifier"
+        android:id="@+id/compass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="放大镜" />
+        android:text="指南针" />
 </LinearLayout>

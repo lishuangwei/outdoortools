@@ -24,4 +24,9 @@
     <string name="noise_level3">嘈杂的工作环境 (060-080 db)</string>
     <string name="noise_level4">神经细胞被破坏 (080-115 db)</string>
     <string name="noise_level5">您最好赶紧离开 (115-150 db)</string>
+    <string name="altitude">海拔: <xliff:g id="value">%d</xliff:g> 米</string>
+    <string name="pressure">气压: <xliff:g id="value">%.1f</xliff:g> 百帕斯卡</string>
+    <string name="getting_location">正在获取位置信息...</string>
+    <string name="cannot_get_location">位置信息获取失败！</string>
+    <string name="not_support">当前设备不支持！</string>
 </resources>

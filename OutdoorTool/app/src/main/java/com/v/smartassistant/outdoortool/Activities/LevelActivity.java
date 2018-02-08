@@ -24,9 +24,8 @@ public class LevelActivity extends AppCompatActivity implements SensorEventListe
 
     private float[] accValues = new float[3];
     private float[] magValues = new float[3];
-    // 旋转矩阵，用来保存磁场和加速度的数据
+
     private float r[] = new float[9];
-    // 模拟方向传感器的数据（原始数据为弧度）
     private float values[] = new float[3];
 
     private LevelView levelView;
@@ -59,14 +58,12 @@ public class LevelActivity extends AppCompatActivity implements SensorEventListe
 
     @Override
     protected void onPause() {
-        // 取消方向传感器的监听
         sensorManager.unregisterListener(this);
         super.onPause();
     }
 
     @Override
     protected void onStop() {
-        // 取消方向传感器的监听
         sensorManager.unregisterListener(this);
         super.onStop();
     }
@@ -77,7 +74,6 @@ public class LevelActivity extends AppCompatActivity implements SensorEventListe
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        // 获取手机触发event的传感器的类型
         int sensorType = event.sensor.getType();
         switch (sensorType) {
             case Sensor.TYPE_ACCELEROMETER:

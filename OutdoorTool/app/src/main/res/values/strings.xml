@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:xliff="http://schemas.android.com/tools">
     <string name="app_name">OutdoorTool</string>
     <string name="level_vertical">vertical</string>
     <string name="level_horizontal">horizontal</string>
@@ -7,4 +7,9 @@
     <string name="noise_level3">Noisy workplace (060-080 db)</string>
     <string name="noise_level4">Harmful noise (080-115 db)</string>
     <string name="noise_level5">Extremely harmful noise (115-150 db)</string>
+    <string name="altitude">Altitude: <xliff:g id="value">%d</xliff:g> m</string>
+    <string name="pressure">Pressure: <xliff:g id="value">%.1f</xliff:g> hPa</string>
+    <string name="getting_location">Getting location...</string>
+    <string name="cannot_get_location">Cannot get your location!</string>
+    <string name="not_support">Current device is not supported！</string>
 </resources>

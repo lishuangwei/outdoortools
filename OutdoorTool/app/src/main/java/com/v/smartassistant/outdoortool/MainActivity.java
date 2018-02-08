@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.v.smartassistant.outdoortool.Activities.AngleSquareActivity;
+import com.v.smartassistant.outdoortool.Activities.CompassActivity;
 import com.v.smartassistant.outdoortool.Activities.LevelActivity;
 import com.v.smartassistant.outdoortool.Activities.NoiseActivity;
 
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt3 = (Button) findViewById(R.id.noise);
         bt3.setOnClickListener(this);
 
-        bt4 = (Button) findViewById(R.id.magnifier);
+        bt4 = (Button) findViewById(R.id.compass);
         bt4.setOnClickListener(this);
     }
 
@@ -46,8 +47,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.noise:
                 openFace(NoiseActivity.class);
                 break;
-            case R.id.magnifier:
-                openFace(MagnifierActivity.class);
+            case R.id.compass:
+                openFace(CompassActivity.class);
                 break;
         }
     }

@@ -3,6 +3,10 @@ package com.v.smartassistant.outdoortool;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
+
+import java.util.List;
 
 /**
  * Created by lishuangwei on 18-2-6.
@@ -36,5 +40,14 @@ public class Utils {
             }
         }
         return result;
+    }
+
+    public static boolean hasSensor(SensorManager sm, int type) {
+        List<Sensor> all = sm.getSensorList(type);
+        if (all.size() > 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
